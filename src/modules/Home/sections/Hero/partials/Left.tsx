@@ -40,6 +40,7 @@ const Left = () => {
 
         <motion.div variants={fadeUpSpring}  initial="hidden" animate="visible" className='w-fit mx-auto lg:ml-0' >
            <a href='#works' ><Button outlined > Check out my projects </Button></a>
+           <a href='#contact' ><Button className="ml-2" href='mailto:gurinder18@outlook.com' hire > Hire Me! </Button></a>
         </motion.div>
     
     </div>

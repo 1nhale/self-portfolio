@@ -12,6 +12,7 @@ export type ButtonProps = {
     secondary?: boolean;
     outlined?: boolean;
     primary?: boolean;
+    hire?: boolean;
     type?: ButtonHTMLAttributes<HTMLButtonElement>["type"];
     href?: string;
     targetBlank?: boolean;

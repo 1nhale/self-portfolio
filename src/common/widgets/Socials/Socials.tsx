@@ -7,11 +7,11 @@ import { motion } from 'framer-motion'
 
 import { socialData } from './config/constans'
 import { SocialTypes } from './config/types'
-import { fadeTop, motionStep } from '@config/motion'
+import { fadeBottom, fadeTop, motionStep } from '@config/motion'
 
 const Socials = () => {
   return (
-    <motion.div variants={fadeTop} {...motionStep} id="__social" className='fixed z-[999] bottom-0 left-[40px] hidden xl:block' >
+    <motion.div variants={fadeBottom} {...motionStep} id="__social" className='fixed z-[999] bottom-0 left-[40px] hidden xl:block' >
         <ul className='space-y-6 after:h-[90px] after:w-[1px] after:bg-slate-400 after:block after:mx-auto after:mt-6' > 
            {socialData.map((e: SocialTypes, i: number) => 
               <li key={i} >

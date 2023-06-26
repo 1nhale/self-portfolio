@@ -22,6 +22,7 @@ const Button: FC<ButtonProps> = ({
   secondary,
   outlined,
   primary,
+  hire,
   onClick = () => {},
 }) => {
   const CLASSES = cx(
@@ -37,6 +38,9 @@ const Button: FC<ButtonProps> = ({
 
   const OUTLINED_CLASS = 
     `!bg-transparent border border-[1.2px] !text-sky-400 border-sky-400 hover:!bg-sky-400/10`
+
+  const HIRE_CLASS = 
+    `!bg-transparent border border-[1.2px] !text-pink-600 border-pink-600 hover:!bg-pink-600/40`
 
   const PRIMARY_CLASS = 
     `!bg-transparent border border-[1.2px] !text-green-400 border-green-400 hover:!bg-green-400/10`
@@ -79,6 +83,7 @@ const Button: FC<ButtonProps> = ({
           CLASSES,
           outlined && OUTLINED_CLASS,
           primary && PRIMARY_CLASS,
+          hire && HIRE_CLASS,
           secondary && SECONDAY_CLASS
         )}
         onClick={onClick}
@@ -97,6 +102,7 @@ const Button: FC<ButtonProps> = ({
         CLASSES,
         outlined && OUTLINED_CLASS,
         primary && PRIMARY_CLASS,
+        hire && HIRE_CLASS,
         secondary && SECONDAY_CLASS
       )}
       onClick={onClick}

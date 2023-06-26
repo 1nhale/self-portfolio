@@ -6,5 +6,4 @@ import { SocialTypes } from './types'
 export const socialData : SocialTypes[] = [
     { icon : FiGithub, url : "https://github.com/1nhale/" },
     { icon : FiLinkedin, url : "https://www.linkedin.com/in/gurinder-s1ngh/" },
-    { icon : FiFacebook, url : "https://www.facebook.com/1nhale" },
 ]
